@@ -23,4 +23,4 @@ define('WX_MCHKEY', '*****');
 define('WX_CENT_PATH', __DIR__ . '/cert/apiclient_cert.pem');
 //证书秘钥路径,注意应该填写绝对路径
 define('WX_CENTKEY_PATH', __DIR__ . '/cert/apiclient_key.pem');
-require '../plugins/WxPay/WxPayPubHelper.php';
+require __DIR__ . '../plugins/WxPay/WxPayPubHelper.php';

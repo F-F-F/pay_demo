@@ -9,7 +9,7 @@
  * @modify    2018-2-23 10:07:15
  * @copyright © 2016-2018 copyright AA笔记
  */
-require '../config/config.php';
+require __DIR__ . '/../config/config.php';
 
 function getOrder($prefix = '')
 {
@@ -18,5 +18,5 @@ function getOrder($prefix = '')
 
 function addLog($string)
 {
-    file_put_contents('../log/pay_log.txt', $string . PHP_EOL, FILE_APPEND);
+    file_put_contents(__DIR__ . '/../log/pay_log.txt', $string . PHP_EOL, FILE_APPEND);
 }

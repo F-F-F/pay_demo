@@ -190,8 +190,8 @@ class Common_util_pub
         //curl_setopt($ch,CURLOPT_PROXY, '8.8.8.8');
         //curl_setopt($ch,CURLOPT_PROXYPORT, 8080);
         curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
         //设置header
         curl_setopt($ch, CURLOPT_HEADER, false);
         //要求结果为字符串且输出到屏幕上
